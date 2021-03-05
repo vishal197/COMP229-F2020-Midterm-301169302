@@ -1,0 +1,50 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Add page -->
+
+<!-- ADD YOU CODE TO CREATE THE EDIT PAGE -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="bookName">Book Name</label>
+                    <input type="text" class="form-control" id="name" value="<%=book.name%>" name = "name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberField">Author</label>
+                    <input type="text" class="form-control" id="author" value="<%=book.author%>" name ="author" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="published">published</label>
+                    <input type="text" class="form-control" id="published" value="<%=book.published%>" name="published" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" id="description" value="<%=book.description%>" name="description" required>
+                </div>
+                <div class="form-group">
+                    <label for="numberField">Price</label>
+                    <input type="text" class="form-control" id="price" value="<%=book.price%>" name="price" required>
+                </div>
+ 
+                
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
